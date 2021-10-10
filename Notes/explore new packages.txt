@@ -1,0 +1,8 @@
+* `Attrs` module/package :
+   ----
+    -> same as data classes in python
+
+
+* joblib :
+  ------ 
+   -> pickled <---> python objects

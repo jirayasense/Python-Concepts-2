@@ -1,0 +1,11 @@
+* np array :
+
+    .dtype
+    .itemsize   
+    .size      //total number of elements
+    .nbytes
+
+    .intersection1d()
+
+    .ravel()  
+    .flatten()

@@ -1,0 +1,31 @@
+[String Formatting] https://realpython.com/python-formatted-output/
+[String Formatting best Practices] https://realpython.com/python-string-formatting/
+[f strings] https://realpython.com/python-f-strings/
+
+[f strings vs raw strings] https://www.askpython.com/python/string/python-f-string
+
+NOTE :
+
+-> In python strings are array of unicode code points. & to get the ordinal value of those points use :
+   ord()
+
+Useful methods : {
+    ord(), bit_length(), encode()
+}
+----------------------------
+
+* String Formatting :
+  -------
+   
+   1) using +
+   2) using placeholders i.e ({})  & format()
+              \
+               with numbers | without numbers
+               keyword arguments
+
+
+
+-----------------------------
+
+
+* Format MiniSpecification : 

@@ -1,0 +1,47 @@
+* __dict__
+   -> https://medium.com/analytics-vidhya/dict-attribute-and-vars-function-in-python-42d82dbaba73
+
+   => used to store an object’s (writable) attributes
+   => is also called `mappingproxy` object
+
+* __missing__ 
+   -> dunder on dict type objects
+
+
+* When you are running any file via python p1.py 
+   -> then for p1 __name__ == __main__ i.e 
+      namespace of that p1.py module for that program at moment is from __main__ 
+
+      So if you want to import any items from same module inside same module you need to use 
+
+      from __main__ import obj
+
+   * timeit & namespace :
+     ---------------
+      -> http://www.openbookproject.net/books/pythonds/AlgorithmAnalysis/Lists.html
+
+
+* Extended unpacking, starred assignment, slice assignment  
+  -------------------------
+   -> behaves greedily with iterator & iterate through the generatpr/iterator at once at time of assigning or definition
+
+* Circular reference :
+  --------------
+   -> ...
+
+* sys argv tip :
+  ---------- 
+  => When we use sys.argv list then, 
+     first element will be module_name if run from command line & not in idle
+
+
+* dis module :
+  --------
+   -> use to analyze CPython bytecode
+
+
+* splat (i.e unpack) operator : {*, **}
+  -------------
+   -> 
+
+     

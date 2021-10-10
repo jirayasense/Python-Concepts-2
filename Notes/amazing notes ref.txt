@@ -1,0 +1,30 @@
+[dunder] http://www.joesacher.com/blog/2017/06/24/dunder-name-main/
+
+[more-itertools] https://pypi.org/project/more-itertools/
+
+* builtins :
+  -------
+   -> module representing the builtins identifiers available in python
+
+* Python 3 does not allow the indiscriminate `import * syntax` from within a function
+
+
+* sign bit in python :
+  -------
+   -> Since integers in Python can have an infinite number of bits, the sign bit doesn’t have a fixed position. 
+      So there’s no sign bit at all in Python
+
+
+* Python & Terminal & Path & Relativeness :
+  --------------
+   -> When you run your python script in VsCode then it actually run like this way 
+
+      "Path_To_Python" "Path_To_Script"
+
+      This will get run in Folder which is currently opened in VsCode as a project/root.
+
+      So that Project location will be considered as refer point for relative paths in 
+       any of its descendents python scripts.
+
+       So you need to keep in mind the Folder in which python is running script,
+       instead of path of script.

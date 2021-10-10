@@ -1,0 +1,31 @@
+[oop] https://realpython.com/python3-object-oriented-programming/
+
+[metaclass] https://realpython.com/python-metaclasses/
+[namedtuple] https://realpython.com/python-namedtuple/
+
+
+[mixin interface] https://rednafi.github.io/digressions/python/2020/07/03/python-mixins.html
+
+[class instance attributes]  https://www.python-course.eu/python3_class_and_instance_attributes.php
+[Mixins ] https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556?gi=c24e199ad78d
+[Decorator] https://realpython.com/primer-on-python-decorators/
+
+* property()
+  callable()
+
+* Monkey Patching - for user defined class only
+
+
+---------------------------
+
+topics :
+   data class, monkey patching, type of class, 
+
+
+------------------------------
+
+* type :
+  ----
+   class that is used as blueprint to define any custom types in python 
+    
+    `type("ClassName", (ParentIfAny), {attrbs})`

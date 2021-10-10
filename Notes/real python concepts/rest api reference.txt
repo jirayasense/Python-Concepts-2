@@ -1,0 +1,5 @@
+https://openweathermap.org/api
+
+To playwith HTTP -> HTTPie i.e (https://httpie.io/)
+
+[urllib]
