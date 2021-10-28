@@ -83,3 +83,10 @@ Useful methods : {
    * One's Complement :
      ------------
        
+
+* rounding :
+  ----
+  -> basically of 3 types -> truncate, round up, round down
+                             round half up, round half down 
+                             round away from zero
+   

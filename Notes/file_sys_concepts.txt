@@ -96,3 +96,5 @@ Q. Diff between stdin and input()
 
     3) from file or file like objects :
            - sys.stdin, fileinput()
+
+           

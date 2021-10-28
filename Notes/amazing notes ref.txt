@@ -28,3 +28,16 @@
 
        So you need to keep in mind the Folder in which python is running script,
        instead of path of script.
+
+* Augmented Assignments in python :
+  -----------------------
+   -> `+=`  is __iadd__()
+    
+        For immutable obj : change the pointers 
+            Mutable Obj   : do inplace operation
+
+* f-strings :
+  -------
+    format specifier i.e after `:`  i.e left:right
+     \
+      is calling dunder __format__() with right part as format_spec on left part object`

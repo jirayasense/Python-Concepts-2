@@ -99,6 +99,8 @@ To calculate factorial -> math.factorial()
    x <op>= y
    x = x <op> y
 
+   -> amazing for immutable they change pointers & for mutable they perform inplace operation
+
 
 * generators :
   ----------
@@ -117,4 +119,9 @@ To calculate factorial -> math.factorial()
 
 * Errors Types in python :
   -------- 
-   -> All types of errors lies in __builtins__  so do dir(__builtins__) to reveal them
+   -> All types of errors lies in __builtins__  so do dir(__builtins__) to reveal theme
+
+
+* leading 0 & int :
+  ----------- 
+   -> leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers

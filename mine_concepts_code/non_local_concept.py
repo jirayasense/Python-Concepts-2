@@ -18,7 +18,7 @@ def f2():
     global y
     y = 20
     def f22():
-        nonlocal y   #no binding for nonlocal 'y' found
+        nonlocal y   # no binding for nonlocal 'y' found
         z = y + 20
         print(z)
     f22()

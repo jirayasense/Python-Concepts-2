@@ -12,3 +12,9 @@ references :
 => itertools.count() 
    ------------
     -> can have float value has step size
+
+
+* itertools.groupby() 
+   ----
+   Tips :- 
+    => Do sorting by <key> before doing groupby() same <key>

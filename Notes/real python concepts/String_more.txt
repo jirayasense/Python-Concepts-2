@@ -24,6 +24,9 @@ Useful methods : {
                keyword arguments
 
 
+* Note Conversion :
+  ------
+    !s is applied before other string formatting
 
 -----------------------------
 

@@ -1,3 +1,6 @@
+* To read document for any python module :- use `pydoc modulename`
+
+
 * __dict__
    -> https://medium.com/analytics-vidhya/dict-attribute-and-vars-function-in-python-42d82dbaba73
 
@@ -42,6 +45,16 @@
 
 * splat (i.e unpack) operator : {*, **}
   -------------
-   -> 
 
-     
+* accumulate vs reduce :
+  ----
+   -> Accumulate provides you all intermediate results in finding reduce() answer
+
+  => Do sorting by key() before doing groupby() same key
+
+
+* `+=` when used with mutable types such as `list` will perform inplace operation i.e `iconcat()`
+
+* `time.perf_counter()` doesnt uses actually clock but it uses CPU clock cycles 
+                        so you always need to use 2 time instances of perf_counter & subtraction 
+                        to calculate elapsed time

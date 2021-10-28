@@ -1,0 +1,3 @@
+https://realpython.com/python-memcache-efficient-caching/
+https://realpython.com/python-memory-management/
+https://realpython.com/python-gil/

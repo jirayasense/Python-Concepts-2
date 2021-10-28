@@ -1,3 +1,7 @@
+-> you can use `...` to select all dimension from start to end 
+   (i.e It fills as many dimension as required )
+
+
 * np array :
 
     .dtype
@@ -9,3 +13,13 @@
 
     .ravel()  
     .flatten()
+
+    .nditer()    // Fortran, C, 
+
+    .meshgrid()
+
+    np.c_()   // zip equivalent col as axis
+       r_()   // zip equivalent row as axis
+
+
+* numpy.percentile()   // to get percentile value

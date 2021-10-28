@@ -9,3 +9,11 @@
     .sort_index()  
 
   pd.read_csv(, index_col='')
+
+* to applys string function filter on Column/Series :- use .str first i.efficient
+     
+     df['ColName'].str.contains('Shah')   // you can do regex and other complication with this
+
+* Conditional Changes :
+  ----
+   -> df.loc[df['col1'] = v1, 'col2'] = new_val   // used 1 condition to change val in other col or same col

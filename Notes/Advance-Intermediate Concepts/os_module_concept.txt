@@ -34,10 +34,9 @@ ______________________________
         .rmdirs()  // nested levels as well 
         .rename()  // rename file name 
 
-        .stat(fileName)  //
+        .stat(fileName)  // stats of filename 
 
-        .walk()     // walk down entire tree from current dir i.e all files & folders
-
+        .walk()     // walk down entire tree from current dir i.e all files & folders 
 
         .environ   // print all environment variables 
 
@@ -48,5 +47,6 @@ ______________________________
              .exists()     // if path exists on file system
              .isdir()       // if path is dir 
              .isfile()
+             .splitext()  // split the filename & extension
 
             

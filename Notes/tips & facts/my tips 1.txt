@@ -3,6 +3,9 @@
 
 Automaticaly generates doc for module/obj :- (in cmd) use `pydoc`
 
+-> * To read document for any python module :- use `pydoc modulename`
+     Eg pydoc sys
+
 1) attributes of an object :
    -------
     To get an attribute of an obj you can have 2 ways :
@@ -78,3 +81,9 @@ Automaticaly generates doc for module/obj :- (in cmd) use `pydoc`
 27) All types of errors lies in __builtins__  so do dir(__builtins__) to reveal them
 
 28) To get info about Exception/Error -> sys.exc_info()
+
+29) use `+=` instead of extend() for list if possible as it's fast
+
+30) use `functools.cache` or `functools.lru_cache` decorator for DP like problems
+
+31) To padd string wit 0 or fill string with 0 :- zfill()

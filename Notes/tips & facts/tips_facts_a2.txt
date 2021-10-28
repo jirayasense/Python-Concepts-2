@@ -1,0 +1,54 @@
+[int internal] https://rushter.com/blog/python-integer-implementation/
+
+
+* int in python is using `bignum` underhood so python can store arbitarily long integers
+
+* random.random() is example of Uniform Distributions 
+  (i.e equal probability for all outcomes)
+
+* Fastest way to loop in python is to not use loop & use formulas if available
+  if not then consider order -> numpy -> builtins -> for loop -> while loop
+
+* `+=` when used with mutable types such as `list` will perform inplace operation i.e `iconcat()`
+
+* use Fraction when you want to gist out something like stroy from result (i.e like probability or else)
+
+* leading zeros in decimal integer literals are not permitted
+  i.e 07 is invalid
+
+* this module ie `import this`
+
+* antigravity module ie `import antigravity`  [open comic book]
+
+--------
+
+-> for loop is faster in compare to while loop 
+   because for loop utilise range() which is iterator written in C underhood 
+   whereas in while we have to do increment of cntr manually which is accounted in python itself so it's bit slow
+-> use builtin function wherever possible instead of for loop or while loop 
+
+=> If possible than use numpy as entire operations are written in C & its much faster
+
+
+-------- Amazing 
+
+Augmented Assignments Operator :
+-----------------------------
+
+-> `+=` behaviour in python
+        - It may call __iadd__() or __iconcat__() on calling object 
+
+        Now when you call += on list lying inside tuple it will behave abruptly
+
+    plus equals -> may change pointer to variable (in case of immutable obj)
+                -> do inplace operation for mutable objects
+
+
+-> __name__ == __main__  : Standalone Script
+    
+    If you see this in python file then you can run it as script 
+    otherwise
+    Connsider that file as ann library  (Unspoken truth)
+
+    __main__ check allows you to create an entry point of an program that will not 
+             work or point will be closed for other scripts
