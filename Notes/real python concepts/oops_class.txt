@@ -1,4 +1,7 @@
+[learning path] https://realpython.com/learning-paths/object-oriented-programming-oop-python/
+
 [oop] https://realpython.com/python3-object-oriented-programming/
+[inheritance & Composition] https://realpython.com/inheritance-composition-python/
 
 [metaclass] https://realpython.com/python-metaclasses/
 [namedtuple] https://realpython.com/python-namedtuple/

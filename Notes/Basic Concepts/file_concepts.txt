@@ -18,3 +18,17 @@ Be careful while writting to file that already exists
   ----
    - Inorder to work with images i.e 'jpg' we need to open file in binary mode.
 
+
+* Csv file :
+  ----
+   module :- csv 
+
+   csv.reader()
+      .writer()
+        \
+         writerow()
+      .DictReader()
+      .DictWriter()
+          \
+           .writeheader()
+

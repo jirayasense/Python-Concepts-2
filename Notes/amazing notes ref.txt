@@ -41,3 +41,11 @@
     format specifier i.e after `:`  i.e left:right
      \
       is calling dunder __format__() with right part as format_spec on left part object`
+
+
+* struct module & bit representation :
+  ---------------
+    struct.pack()  // helps us to see binary representation of a number under the hood
+
+
+* Normal Functions implement the descriptor protocol

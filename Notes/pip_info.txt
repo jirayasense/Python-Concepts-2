@@ -10,6 +10,8 @@ where python
 pip - manula package manager
 conda - for non python packages
 
+* Install packages from PyPi via pip
+
 pip search pkg_name
 pip install pkg_name     
 pip list                 //list all installed package 
@@ -26,6 +28,15 @@ pip list --outdated       // list all outdated packages
 //update all outdated packages at once :
 pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U 
 -------
+
+
+
+* Install packages from github via pip :- just add git+ ahead of url 
+     = pip install "git+{githuburl}"
+
+     use @ at the end to download from specific branch or commit or version
+
+     #egg=requests at the end
 
 
 --------------------------------------
@@ -66,6 +77,8 @@ pip freeze --local | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
 
             %%HTML   //Allow you to embed html in your notebook
             %%timeit //time your code block/cell
+
+    
 
    
     

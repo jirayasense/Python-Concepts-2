@@ -20,6 +20,15 @@
 
 * antigravity module ie `import antigravity`  [open comic book]
 
+* To see underlying representation of num in bits use `struct` module/library : struct.pack()
+
+* decimal.localcontext -> to change context settings for decimal module
+
+* Inorder to get str obj from eval() in python :- use eval(repr(s)) // s is str obj 
+  so instead of eval(s) => use eval(repr(s))
+
+* heapq lets you fetch top t of n items in O(t+n) time
+
 --------
 
 -> for loop is faster in compare to while loop 
@@ -29,6 +38,7 @@
 
 => If possible than use numpy as entire operations are written in C & its much faster
 
+=> `nan` is the only object which on comparing itself gives False every time
 
 -------- Amazing 
 
@@ -52,3 +62,8 @@ Augmented Assignments Operator :
 
     __main__ check allows you to create an entry point of an program that will not 
              work or point will be closed for other scripts
+
+-> int() rounds towards 0 
+   whereas division via `//` is same as floor() result 
+    
+   So When we have -ve result in division int() will perform Ceil whereas // will perform floor() always

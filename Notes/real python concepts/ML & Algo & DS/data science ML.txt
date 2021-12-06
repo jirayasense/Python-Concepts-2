@@ -17,3 +17,5 @@
 
 [numpy pandas data cleaning] https://realpython.com/fast-flexible-pandas/
 
+https://realpython.com/tutorials/data-science/
+

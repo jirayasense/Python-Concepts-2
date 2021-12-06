@@ -4,6 +4,8 @@ ref : https://realpython.com/python-heapq-module/#data-structures-heaps-and-prio
 
 [PyMOTW - DS] https://pymotw.com/3/data_structures.html
 
+[PyCOn Data structure ] https://www.youtube.com/watch?v=fYlnfvKVDoM
+
 
 * Stack :
   -----
@@ -54,3 +56,7 @@ ref : https://realpython.com/python-heapq-module/#data-structures-heaps-and-prio
 * priority queue + dynamic programming = sometimes useful
 
 * USECASE - Finding paths
+
+* HeapQ  :
+  ----
+   -> For n largest or n smallest element

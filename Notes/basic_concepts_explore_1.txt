@@ -110,3 +110,16 @@ https://dbader.org/blog/python-repr-vs-str
 
 
 * To remove key-val pair from dictionary :-  `dict_obj.pop()`
+
+* new() vs init():
+  ------------  
+   __new__ :- call to create object 
+   __init__ :- to add attrib to that object
+
+   new :- return object 
+   init :- do not return anything
+
+   generlly signature of both are same
+
+   new :- is a class method 
+   init :- is a instance method

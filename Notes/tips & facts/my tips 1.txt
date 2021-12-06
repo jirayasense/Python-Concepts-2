@@ -87,3 +87,13 @@ Automaticaly generates doc for module/obj :- (in cmd) use `pydoc`
 30) use `functools.cache` or `functools.lru_cache` decorator for DP like problems
 
 31) To padd string wit 0 or fill string with 0 :- zfill()
+
+32) To evaluate the code you can use :- time.clock()
+
+33) To kill the Python Program :- os._exit(1) or sys.exit()
+
+34) to call classmethod from innstance method use :- type(self).classMethodName()
+
+35) If list or array is already sorted :- use `bisect` module to manipulate
+
+36) `heapq` lets you fetch top t of n items in O(t+n) time

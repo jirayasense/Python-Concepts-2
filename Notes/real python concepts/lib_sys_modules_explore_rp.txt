@@ -98,6 +98,8 @@ requests
 * size of object :
   --------------
    sys.getsizeof(o)   // size of obj o in memory
+      \
+       -> Note this doesnt cnt memory for sub-object
 
 * sys.argv :
   -------

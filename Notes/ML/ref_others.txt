@@ -24,3 +24,5 @@
 [histogram with matplotlib]
 https://realpython.com/python-histograms/#visualizing-histograms-with-matplotlib-and-pandas
 
+[numpy axes] https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-explanation
+

@@ -41,3 +41,19 @@ q to get range of rows :  -> df.iloc[s:e, {[list of columns index]}]  //s-start,
 Q to get rows & col cnt : -> shape()
 
 Q set col as index :->  df.set_index('col_name')
+
+Q to check if series elem in series2 :- s1.isin(s2)
+
+
+* Remember : 
+   ----
+    Masking only works with Boolean Series in pandas dataframe
+
+   To do slice based on index :- df.iloc[i1:i2, j1:j2]
+
+   if pd.concate() on axis = 0 then index will be repeated
+
+   .loc can use labels & boolean array to access rows
+
+* subset using 2 ways :  
+  -----

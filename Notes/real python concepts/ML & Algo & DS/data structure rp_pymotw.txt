@@ -11,5 +11,8 @@
 [dequeue] https://realpython.com/python-deque/
 [heapQ] https://realpython.com/python-heapq-module/
 
+[Binary Search] https://realpython.com/binary-search-python/
+[Recurrsion] https://realpython.com/python-recursion/
+
 [Ds Pytmotw] https://pymotw.com/3/data_structures.html
 

@@ -1,5 +1,12 @@
+ref  
+https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-explanation
+
 -> you can use `...` to select all dimension from start to end 
    (i.e It fills as many dimension as required )
+
+=> NumPy’s NaN value can’t be compared to any other value using the == operator 
+   since this comparison will always be False. 
+   NumPy offers the isnan function, which has to be used to compare a value to NaN. 
 
 
 * np array :
@@ -21,5 +28,93 @@
     np.c_()   // zip equivalent col as axis
        r_()   // zip equivalent row as axis
 
+    .append()
+
+    .eye()    // param k allows to shift the diagonal up or down in matrix
+
+    .argsort()
+    .diff()    // diff between consecutive numbers in original arr
+
+    .sum()
+    .average()
+    .var()    // variance
+    .std()
+    
+    .invert()   // invert all boolean values 
+    .nonzero()
+
+    .argmax()
+    .argsort()
+
 
 * numpy.percentile()   // to get percentile value
+
+=> ndim :- number of axes 
+   shape :- no of member in eeach axis 
+
+   Consider axis starts from leftmost bracket till encounter first numerical 
+   
+   the axes are ordered from the outermost to the innermost nesting level
+
+* Multi-Dimensional Array Indexing :
+  -----------
+  
+  -> You can index & slice each axis seperately
+  -> If slice or idx is not apply for specific axis then default : is used
+
+  => You can fill remaininng default slicing axis (:) with ... ie 3 dots
+
+* Masking : (boolean indexing)
+  ----
+  
+  -> result is always flattened array (ie 1 dimensional vector)
+  -? You can use reshape(...) to make it as your convenient
+
+* arange() vs range()
+  ------
+   arange() works with float as well
+
+* Hadamard Product :
+  ------------
+   -> * in numpy array perform Hadamard Prod ie element wise product
+
+* Matrix Multiplication ;
+  -----
+   1) np.matmul()
+   or 
+   2) `@` 
+       Eg m1 @ m2
+
+   Comparing 2 different matrices in numpy produces boolean matrices
+
+* Cross Product :
+  -----
+   -> Corss Product of 2 vector gives another vector that stands at right angle to other vectors
+
+* Averaging 2D arrays :
+  -----
+   Flattens the array & return average
+
+* Axis in 2-D :
+  -----
+   axes = 0 // for row that go downwards   // collapses rows 
+   axes = 1 // for column that go from left -> right  // collapese columns
+
+   the axis parameter controls which axis will be collapsed.
+
+* Filter Array or boolean indexing :
+  ----------------
+
+* sum() vs np.sum() :
+  ----------
+   sum() :- return the numpy array itself after doing addition for axis=0
+   np.sum() :- flatten & do addition
+
+   sum(a) = np.sum(a, axis=0)
+
+* nonzero() :
+  -----
+   the nonzero() function returns the indices along each dimension of the input array 
+   as a tuple of array indices.
+
+   

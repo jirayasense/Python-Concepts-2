@@ -1,0 +1,4 @@
+* Python is compiled but not to Machine code but to Byte Code 
+  This Byte Code is used then by the interpreter
+
+  .pyc files is compiled python files

@@ -69,4 +69,8 @@
 * joblib :
   ------
 
+* struct :
+    \
+     pack()  // to get full binary bits repre of number
+
       

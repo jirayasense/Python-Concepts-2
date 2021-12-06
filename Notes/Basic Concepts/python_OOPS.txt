@@ -1,0 +1,34 @@
+=> Normal Functions implement the descriptor protocol
+
+______________________________
+
+
+* new() vs init():
+  ------------  
+   __new__ :- call to create object 
+   __init__ :- to add attrib to that object
+
+   new :- return object 
+   init :- do not return anything
+
+   generlly signature of both are same
+
+   new :- is a class method     (cls)
+   init :- is a instance method (self)
+
+   => Always remember to return something from new (as that is its job)
+
+   new :- Change how obj is created
+
+
+   init :- when called obj is already created 
+   
+   So if you want to perform anything during or before object creation use __new__ 
+   else you can go with __init__
+
+   So __new__ is often used when to deal with immutable object 
+   as immutable obj cannot be altered once created 
+
+* classmethod & staticmethod 
+  ----------------
+   to call classmethod from innstance method use :- type(self).classMethodName()

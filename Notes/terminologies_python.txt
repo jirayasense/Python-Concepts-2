@@ -44,3 +44,7 @@
 * Local Symbol table :
 * LEGB Scope Resolution : (Local, Enclosing, Global, Builtin)
 
+* Decorator Func : allow to add functionalities to existing function via adding some func to wrapper Func   
+        \
+         -> decorated_func():
+                return wrapper_func()

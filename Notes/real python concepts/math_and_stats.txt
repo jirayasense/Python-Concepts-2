@@ -26,6 +26,12 @@ ref :- https://realpython.com/lessons/math-and-statistics-functions/
 
 * decimal.Decimal
 
+* struct.pack()   // to get floating point representation of a float number 
+
+--------------------------------------
+
+=> `nan` is only kinda python obj that is not comparable (ie when compared is meaningless) 
+         always return false 
 
 -----------------------------------------
 
@@ -89,4 +95,21 @@ Useful methods : {
   -> basically of 3 types -> truncate, round up, round down
                              round half up, round half down 
                              round away from zero
+
+  - int() round towards 0
+    &
+    // always gives floor() val
    
+-----
+
+* struct.pack() :
+  ------------
+   -> helps to get floating pt represention of number 
+
+      sign * 2^(e-1023) * 1.fraction
+
+   => As float point are always not accurate in repr so they may be roundned & truncated
+      in case of repeating decimal/fraction digits
+
+=> If you want exact represention then use `decimal.Decimal`
+   It will take up a bit memory as its using string representation under the hood 

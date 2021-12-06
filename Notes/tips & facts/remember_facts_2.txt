@@ -1,0 +1,17 @@
+* Type checking :
+  -----------
+   do not check type with `==` 
+    Eg type(o) == tuple
+
+   In such case subclass will fail i.e violation of Liskov Substitution Principle
+
+   So checking type equality is violation of Liskov Substitution Principle
+
+   use `isinstance()`  instead
+
+
+* sys.getsizeof() doesn't count size of memory of sub-objects
+
+* Python silently handles the StopIteration & GeneratorExit exception
+
+* __init_subclass__() is called whenever class sub classes subclass the parent class

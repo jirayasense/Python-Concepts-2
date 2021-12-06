@@ -6,3 +6,7 @@
 * joblib :
   ------ 
    -> pickled <---> python objects
+
+* tqdm :
+  -----
+   to trace the progress while iterating heavily on List

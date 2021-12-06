@@ -20,6 +20,7 @@ https://realpython.com/python-data-structures/
 
 https://realpython.com/python-data-classes/
 https://realpython.com/python3-object-oriented-programming/
+https://realpython.com/python-metaclasses/
 
 
 https://realpython.com/numpy-tutorial/
@@ -38,6 +39,10 @@ https://realpython.com/python-memory-management/
 https://realpython.com/python-gil/
 
 https://realpython.com/python-lambda/
+
+[Python Packages]
+https://realpython.com/python-packages/
+
 
 Class-Inheritance...
 

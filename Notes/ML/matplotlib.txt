@@ -1,3 +1,42 @@
+-> always use plt.show()
+
+plt :
+---
+
+shorthand notation for formatting :
+fmt :- [color][marker][line]
+
+* saveFig()   // higher dpi higher resolution you will get
+
+* xticks()
+  yticks()
+
+* xlabel()
+  ylabel()
+  title()
+
+---------
+
+* change the style of plots :- plt.style.use('ggplot')
 
 
-* saveFig()
+
+---------
+
+
+
+* bar chart ;
+  ---
+   bar.set_hatch()
+
+1) histogram :- for a series
+    \
+     kinnd of bar chart but they have bins instead of displaying all information
+ 
+2) Pie       :- pas a list of numbers
+               autopct, pctdistance, explode
+
+3) Violin Plots :- Max, Min, Mean & interval
+   Box Plots    :- // List of values 
+                   
+

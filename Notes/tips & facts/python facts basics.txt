@@ -58,3 +58,26 @@
 * `time.perf_counter()` doesnt uses actually clock but it uses CPU clock cycles 
                         so you always need to use 2 time instances of perf_counter & subtraction 
                         to calculate elapsed time
+
+* View vs Copy :
+  ---------
+   eg dict.keys()
+   -> View is not copy of any iterable but its kinda Window to access that iterable
+   -> They provide a dynamic view on the dictionary’s entries, 
+      which means that when the dictionary changes, the view reflects these changes
+
+
+* repr() vs str() :
+  -----------
+   repr() :- goal is to be unambiguous
+   str()  :- goal is to be readable
+
+   repr() is more like a python command so (it can be used with eval)
+
+* Exception vs BaseException :
+  ----------
+   Exception :- is meant for all logical code ie funtion & classes
+   BaseException :- parent, can catch sys.exit() exception 
+
+   also bare except:  - will not get interrupt via ctrl+c 
+        but except Except will get interrupt via ctrl + c

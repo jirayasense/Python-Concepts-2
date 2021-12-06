@@ -8,7 +8,7 @@ for i in range(1, 5):
 for i in range(1, 5):
     print(random.randint(1, 6))
 
-
+# select unique elements
 print(random.sample([1, 2, 3, 4, 5], 3))
 
 # -----------
