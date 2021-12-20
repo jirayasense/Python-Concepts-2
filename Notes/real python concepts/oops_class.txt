@@ -13,6 +13,8 @@
 [Mixins ] https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556?gi=c24e199ad78d
 [Decorator] https://realpython.com/primer-on-python-decorators/
 
+[descriptors] https://realpython.com/python-descriptors/
+
 * property()
   callable()
 

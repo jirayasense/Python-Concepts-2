@@ -72,8 +72,16 @@ def list_intersection_2(l1, l2):
             freq_s_l[n] -= 1
     return ans
 
+def counter(nums):
+    ctr = {}
+    for e in nums:
+        ctr[e] = 1 + ctr.get(e, 0)
+    return ctr
+
 
 s = canEitherListBeEaten([13, 12, 3], [2, 2, 12, 13])
 print(s)
 
 print(minmax([1, 2, 3, 2, 10, 8, -1]))
+
+print(counter([11,1,2,11,2,3,2,1,22,2,22,5,4,4,4,4,4,4,4,5,5,5,11,1]))

@@ -15,3 +15,11 @@
 * Python silently handles the StopIteration & GeneratorExit exception
 
 * __init_subclass__() is called whenever class sub classes subclass the parent class
+
+* The built-in namespace doesn’t behave like a dictionary. Python implements it as a module.
+
+* In python when you raise custom exception from some other Exception occured in code 
+  & you want to prevent the call-stack then you can use  :-
+    raise CustomExceptinClass() from None  // this will only show CustomExceptinClass stack trace & not all rest other above it
+
+=> Python scopes are dictionaries that map names to objects.

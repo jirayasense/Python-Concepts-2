@@ -2,6 +2,11 @@
 
 [more-itertools] https://pypi.org/project/more-itertools/
 
+* namespace :
+  -------
+   its a mapping of names ie identifiers in python
+   module := is one kind of namespace that possess different attributes
+
 * builtins :
   -------
    -> module representing the builtins identifiers available in python
@@ -49,3 +54,8 @@
 
 
 * Normal Functions implement the descriptor protocol
+
+* Ellipsis & Cyclic Reference :
+  -----------
+   Ellipsis is special operator in python :- `...`
+  - denotes the cyclical reference in python

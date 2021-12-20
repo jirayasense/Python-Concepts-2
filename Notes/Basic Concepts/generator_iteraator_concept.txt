@@ -1,0 +1,9 @@
+(generator) https://realpython.com/introduction-to-python-generators/#using-advanced-generator-methods
+
+modules useful :
+  {  sys.getsizeof, cprofile  }
+
+* Generators :
+ ----------
+  ->  Python yield statement is certainly the linchpin 
+      on which all of the functionality of generators rests

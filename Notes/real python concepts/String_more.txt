@@ -4,6 +4,8 @@
 
 [f strings vs raw strings] https://www.askpython.com/python/string/python-f-string
 
+[Template Strings] https://realpython.com/python-string-formatting/#4-template-strings-standard-library
+
 NOTE :
 
 -> In python strings are array of unicode code points. & to get the ordinal value of those points use :
@@ -27,6 +29,11 @@ Useful methods : {
 * Note Conversion :
   ------
     !s is applied before other string formatting
+
+
+* Template Strings :
+  ------
+   -> mostly used for the Substitution purpose
 
 -----------------------------
 

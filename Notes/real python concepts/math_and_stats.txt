@@ -2,7 +2,9 @@ modules : math, statistics, fractions, decimal
 
  others : statsmodels, scipy.stats
 
-ref :- https://realpython.com/lessons/math-and-statistics-functions/
+ref :- 
+
+[Statistics] https://realpython.com/lessons/math-and-statistics-functions/
 
 [round] https://realpython.com/python-rounding/#truncation
 

@@ -2,3 +2,28 @@
   This Byte Code is used then by the interpreter
 
   .pyc files is compiled python files
+
+
+* In python an assignment is not expression but statement & its done from left to right (in case of chained one)
+
+* Exception :
+  -----
+   -> To silence the raised exception (ie dont want the callback stack)
+       \
+        -> use :- raise Exception('error string') from None 
+
+  
+=> GeneratorExit exception is not same as Exception
+
+* Dictionary View Objects :
+  ----------
+   => keys() & values() 
+       \
+        -> these are windows to the underlying dictionary objects 
+           So whennever any update happens on the dictionary it will reflect immediately
+           (ie kinda Reactive)
+
+
+* Scopes :
+  ----
+   Python scopes are dictionaries that map names to objects.

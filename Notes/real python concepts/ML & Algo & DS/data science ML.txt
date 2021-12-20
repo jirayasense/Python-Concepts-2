@@ -1,5 +1,7 @@
 [statistics] https://realpython.com/python-statistics/
 
+[ jupyter NB] https://realpython.com/jupyter-notebook-introduction/
+
 
 [numpy references] https://realpython.com/tutorials/numpy/
 [numpy tutorial] https://realpython.com/numpy-tutorial/
@@ -14,6 +16,8 @@
 [pandas explore dataset] https://realpython.com/pandas-python-explore-dataset/
 [Pandas Sort] https://realpython.com/pandas-sort-python/
 [pandas fast flexible] https://realpython.com/fast-flexible-pandas/
+
+[Data Visualization Bokeh] https://realpython.com/python-data-visualization-bokeh/
 
 [numpy pandas data cleaning] https://realpython.com/fast-flexible-pandas/
 

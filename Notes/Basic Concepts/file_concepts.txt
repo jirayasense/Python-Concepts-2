@@ -1,3 +1,7 @@
+[csv file reader] https://realpython.com/python-csv/
+
+------------------
+
 * When file open with context manager :
    \
     You still have access to file object outside but file will be closed
@@ -22,6 +26,9 @@ Be careful while writting to file that already exists
 * Csv file :
   ----
    module :- csv 
+
+   => Its built on top of open() to reduce boiler plate code to read csv files content
+      (Otherwise we need to process the strings)
 
    csv.reader()
       .writer()

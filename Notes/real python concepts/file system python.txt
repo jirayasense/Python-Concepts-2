@@ -8,3 +8,5 @@
 [commandline interface argparse] https://realpython.com/command-line-interfaces-python-argparse/
 [commandline arguments] https://realpython.com/python-command-line-arguments/
 [compare commandline libraries] https://realpython.com/comparing-python-command-line-parsing-libraries-argparse-docopt-click/
+
+[csv file] https://realpython.com/python-csv/

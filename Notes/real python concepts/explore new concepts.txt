@@ -73,4 +73,23 @@
     \
      pack()  // to get full binary bits repre of number
 
-      
+* cprofile :
+  ----
+   -> to get information abt any function call
+
+* csv :
+  ---
+   reader 
+   Sniffer().sniff()  // to get the dialect
+
+* string :
+  ----
+   Template 
+      - substitute
+
+* collections.ChainMap 
+  ----
+    new_child()
+    parents
+
+

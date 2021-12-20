@@ -1,3 +1,5 @@
+
+--------------------------
 TIP : Slicing is inclusive in pandas
 
 * Pandas : pd
@@ -54,6 +56,8 @@ Q to check if series elem in series2 :- s1.isin(s2)
    if pd.concate() on axis = 0 then index will be repeated
 
    .loc can use labels & boolean array to access rows
+
+   => The new DataFrame index is the union of the two Series indices:
 
 * subset using 2 ways :  
   -----

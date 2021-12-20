@@ -19,6 +19,9 @@
    name resolution :- LEGB rule 
 
    builtin scope ;- names that are pre-assigned in python
+
+   => The built-in namespace doesn’t behave like a dictionary. 
+      Python implements it as a module.
    
    ---
    IMP

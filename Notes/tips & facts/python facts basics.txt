@@ -59,12 +59,14 @@
                         so you always need to use 2 time instances of perf_counter & subtraction 
                         to calculate elapsed time
 
-* View vs Copy :
-  ---------
-   eg dict.keys()
+* View Objects vs Copy :  (https://johnlekberg.com/blog/2020-09-19-dict-view.html)
+  ------------------
+   eg dict.keys(), dict.values()
    -> View is not copy of any iterable but its kinda Window to access that iterable
    -> They provide a dynamic view on the dictionary’s entries, 
       which means that when the dictionary changes, the view reflects these changes
+
+   -> Its kinda reactive way informally
 
 
 * repr() vs str() :
@@ -81,3 +83,19 @@
 
    also bare except:  - will not get interrupt via ctrl+c 
         but except Except will get interrupt via ctrl + c
+
+
+* Assignments :
+  ---------
+   assignments in python are statements & not expression 
+   So chain assignments will work from left -> right
+
+   For expression we have Walrus operator `:=` 
+   that return val after doing assignment
+
+   So 
+
+   normal equal operator `=` :- left -> right 
+   assignment expression operator (walrus) `:=`  :- goes right -> left
+   
+    

@@ -29,6 +29,8 @@
 
 * heapq lets you fetch top t of n items in O(t+n) time
 
+* To list all objects in builtin namespace :- dir(__builtins__)
+
 --------
 
 -> for loop is faster in compare to while loop 
@@ -67,3 +69,15 @@ Augmented Assignments Operator :
    whereas division via `//` is same as floor() result 
     
    So When we have -ve result in division int() will perform Ceil whereas // will perform floor() always
+
+-> `/` is used in function param to signnify end of positional arguments
+
+=> To get the info regarding any function call in python you can usen :- cprofile.run 
+
+
+* Tricky Assignments :
+  ----------
+   Ellipsis :- ...
+
+   Whenn you do chain assignments in python -> a temp var is created for val expression
+    & then all variable from left to right are assigned that temp variable one by one

@@ -26,3 +26,8 @@ https://realpython.com/python-histograms/#visualizing-histograms-with-matplotlib
 
 [numpy axes] https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-explanation
 
+
+
+----------
+
+[Pandas Tricks] https://towardsdatascience.com/11-pandas-built-in-functions-you-should-know-1cf1783c2b9

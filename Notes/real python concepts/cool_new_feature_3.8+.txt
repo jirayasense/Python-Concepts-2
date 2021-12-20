@@ -1,6 +1,6 @@
 [p3.8] https://realpython.com/courses/cool-new-features-python-38/
 [bpython] https://dbader.org/blog/bpython-a-better-python-repl
-[positional onlu argument] https://realpython.com/lessons/positional-only-arguments/
+[positional only argument] https://realpython.com/lessons/positional-only-arguments/
 [metadata] https://realpython.com/lessons/importlibmetadata/
 [optimizations] https://realpython.com/lessons/optimizations/
 

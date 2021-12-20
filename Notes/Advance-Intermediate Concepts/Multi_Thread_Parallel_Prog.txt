@@ -1,0 +1,7 @@
+* Multi Threading :
+  -----------
+   -> Control by the OS 
+
+  Coroutines : 
+  -----
+   -> Can be controlled by us ie Cooperatively

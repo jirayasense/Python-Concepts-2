@@ -1,3 +1,9 @@
-https://realpython.com/python-memcache-efficient-caching/
-https://realpython.com/python-memory-management/
-https://realpython.com/python-gil/
+[MemCache efficient Caching] https://realpython.com/python-memcache-efficient-caching/
+[memory Management] https://realpython.com/python-memory-management/
+[GIL] https://realpython.com/python-gil/
+
+[LRU] https://realpython.com/lru-cache-python/
+
+[intro threading] https://realpython.com/intro-to-python-threading/
+[concurrency] https://realpython.com/python-concurrency/
+[async io] https://realpython.com/async-io-python/

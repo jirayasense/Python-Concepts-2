@@ -8,3 +8,6 @@
   -------
    __init__ ; keep hold of initial func to be decorated innside a variable
    __call__ ; wrapper function impl inside this 
+
+
+* functools :- @wraps decorator
