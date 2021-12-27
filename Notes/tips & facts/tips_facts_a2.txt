@@ -42,6 +42,8 @@
 
 => `nan` is the only object which on comparing itself gives False every time
 
+=> is & in are comparison operators & can participate in chained comparison
+
 -------- Amazing 
 
 Augmented Assignments Operator :

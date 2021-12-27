@@ -97,3 +97,5 @@ Automaticaly generates doc for module/obj :- (in cmd) use `pydoc`
 35) If list or array is already sorted :- use `bisect` module to manipulate
 
 36) `heapq` lets you fetch top t of n items in O(t+n) time
+
+37) to get refcount of an object :- sys.getrefcount

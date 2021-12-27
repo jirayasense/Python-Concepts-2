@@ -8,7 +8,7 @@
     .reset_index    //undo reset_index
     .sort_index()  
 
-  pd.read_csv(, index_col='')
+  pd.read_csv(, index_col=)
 
 * to applys string function filter on Column/Series :- use .str first i.efficient
      

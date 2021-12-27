@@ -35,6 +35,10 @@ Useful methods : {
   ------
    -> mostly used for the Substitution purpose
 
+* strip() :
+  ----
+   If passed string as arg thenn it will consider it as multiple character & not substring match
+
 -----------------------------
 
 

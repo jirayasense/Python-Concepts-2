@@ -10,6 +10,17 @@ Useful Property :
    - empty
    - axes
 
+_____________
+Remember
+
+Note: nan, which stands for “not a number,” is a particular floating-point value in Python.
+
+float('nan')
+numpy.nan 
+math.nan
+
+By default Your index of dataframe is 0th axes
+
 -------------
 
 Series & Dataframe both stores values in numpy array 
@@ -34,6 +45,8 @@ object data type is
    -> Series Objects wraps 2 info 
       1) seq of vals 
       2) seq of identifiers (ie index)
+
+  also Series has corresp names :- ie .name
 
   implicit index : (positional)
   ---
@@ -182,3 +195,32 @@ methods :-
 
     -> If you merge totaly on different columns then by default 0 based inndexing will 
        happen in resulted dataframe 
+
+------------------------------
+(READ-WRITE files )
+
+- to_excel, to_csv, to_html, to_json, to_pickle, to_sql
+
+  read likewise as above
+
+  * to_csv()
+    -----
+     param :- path_or_buf,
+              na_rep
+              date_format
+              sep          // denotes a values separator.
+              decimal      // indicates a decimal separator.
+              encoding     // sets the file encoding.
+              header       // specifies whether you want to write column labels in the file.
+
+  Pandas consifering follwoing values as missing value whilst reading :
+    
+    '', 'nan', 'n/a', 'na', 'null', '-nan'
+
+  * read_csv() :
+    -----
+     param : index_col,
+             dtypes,
+             parse_dates,
+             squeeze       // to get series object
+

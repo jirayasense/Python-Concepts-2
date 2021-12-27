@@ -60,3 +60,8 @@ ref : https://realpython.com/python-heapq-module/#data-structures-heaps-and-prio
 * HeapQ  :
   ----
    -> For n largest or n smallest element
+
+* namedtuple :  (collections)
+  -----
+   -> light weigh obj that provides good readability
+   -> compromise between tuple & dictionary

@@ -50,7 +50,7 @@ https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-expla
 * numpy.percentile()   // to get percentile value
 
 => ndim :- number of axes 
-   shape :- no of member in eeach axis 
+   shape :- no of member in each axis 
 
    Consider axis starts from leftmost bracket till encounter first numerical 
    
@@ -90,6 +90,11 @@ https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-expla
 * Cross Product :
   -----
    -> Corss Product of 2 vector gives another vector that stands at right angle to other vectors
+   - Right Hand Thumb Rule 
+
+* Dot Product :
+  ----
+   -> Helps to find the angle between 2 Vectors
 
 * Averaging 2D arrays :
   -----

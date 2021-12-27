@@ -1,25 +1,29 @@
 ------
 - modules :- { array, struct }
 
+ref
+[record vs struct vs reference] https://hoven.in/cs-lang/records-in-cs9.html
+
 _________
 
 PyCon 2014 - Std Lib Data structures
 
 Most dangerous data structure in python :- List
 
-Address aarithmetic supports :- Records & Arrays
+Address arithmetic supports :- Records & Arrays
 
 * Records : Sequence of fields in an agreed order in memory
   -----
-
+   -> immutable class alike
+   -> A record is a data structure for storing a fixed number of elements
 
 * C structure via Python :
   ------------------
    module name :- struct 
                    \
-                    - pack, unnpack
+                    - pack, unpack
 
-    struct can be useful for doing binary conversation with C library or I/O
+   struct can be useful for doing binary conversation with C library or I/O
 
 * Array :
   ----
@@ -158,14 +162,14 @@ Q) Fetching a range !!!
 
 Linked-List, Doubly-Linked List, Trees ::
  
-  all these makes sense less with pytho because 
+  all these makes sense less with python because 
   Python stores only addresses & these data structure deals with data as well.
  
  => Both deque & OrderedDict do have secretley Doubly Linked list inside
 
  -> other linked lists are hidden under the memory allocation layer 
 
- => since all your python objects are already inside malloc()-style linked lists.
+ => since all your python objects are already inside malloc()-style linked lists. (list that can dynamically allocate memory)
     (ie all general DS in python is storing references ie address itself)
     adding further level of linking is redundant
 

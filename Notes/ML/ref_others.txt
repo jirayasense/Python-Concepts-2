@@ -31,3 +31,5 @@ https://realpython.com/python-histograms/#visualizing-histograms-with-matplotlib
 ----------
 
 [Pandas Tricks] https://towardsdatascience.com/11-pandas-built-in-functions-you-should-know-1cf1783c2b9
+
+[Pandas sample] https://datatofish.com/random-rows-pandas-dataframe/

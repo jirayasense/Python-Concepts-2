@@ -21,5 +21,18 @@
 
 [numpy pandas data cleaning] https://realpython.com/fast-flexible-pandas/
 
+[Panndas Read Write Files] https://realpython.com/pandas-read-write-files/
+[Python CsV] https://realpython.com/python-csv/
+
 https://realpython.com/tutorials/data-science/
 
+[bigData & PySpark] https://realpython.com/pyspark-intro/
+
+
+Useful Modules :
+  
+  pandas, numpy, csv 
+
+  xlwt, openpyxl, XslxWriter, xlrd
+
+  

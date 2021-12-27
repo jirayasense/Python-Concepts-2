@@ -7,3 +7,40 @@
 [intro threading] https://realpython.com/intro-to-python-threading/
 [concurrency] https://realpython.com/python-concurrency/
 [async io] https://realpython.com/async-io-python/
+
+[multiprocessig] https://realpython.com/python-concurrency/#multiprocessing-version
+
+----------
+TIPS 
+
+- to get refcount of an object :- sys.getrefcount()
+- to check the fix interval of conntinuous use by a thread :- sys.getcheckinterval()
+
+-----------
+=> Python uses reference counting for memory management
+   Other languages uses garbage collection for memory management 
+
+-> Python has Single-Thread, GIL way for memory management (powerful for single threaded)
+   Other lanng have JIT compilers that employs Locking mechanism (good for multi-threaded)
+
+
+* GIL (Global interpreter Lock) :
+  ------
+  The Python Global Interpreter Lock or GIL, in simple words, is a mutex (or a lock) 
+  that allows only one thread to hold the control of the Python interpreter.
+
+  * deadlock :- can only happen if there is more than 1 lock
+
+  -> GIL simple as only 1 lock needs to be managed
+
+  => lock is shared between threads 
+
+-> CPU-bound programs are those that are pushing the CPU to its limit
+
+-> In the multi-threaded version the GIL prevented the CPU-bound threads from executing in parellel.
+
+=> On 1 Core your interpreter is shared by the different threads 
+
+* multi-Processing :
+  ------
+   Each Python process gets its own Python interpreter and memory space so the GIL won’t be a problem
