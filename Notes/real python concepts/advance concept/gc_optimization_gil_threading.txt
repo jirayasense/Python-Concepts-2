@@ -1,6 +1,7 @@
 [MemCache efficient Caching] https://realpython.com/python-memcache-efficient-caching/
 [memory Management] https://realpython.com/python-memory-management/
 [GIL] https://realpython.com/python-gil/
+[Redis for Cacheing] https://realpython.com/caching-in-django-with-redis/
 
 [LRU] https://realpython.com/lru-cache-python/
 
@@ -44,3 +45,32 @@ TIPS
 * multi-Processing :
   ------
    Each Python process gets its own Python interpreter and memory space so the GIL won’t be a problem
+
+------------
+[Memory]
+
+-> Python Code gets boiled down to ByteCode which then interpreted by Virtual Machine
+
+* Struct :
+    A struct, or structure, in C is a custom data type that groups together different data types. 
+    To compare to object-oriented languages, it’s like a class with attributes and no methods.
+
+* PyObject :
+  --
+   -> grand-daddy of all objects in Python
+   - 2 info :-  ob_refcnt, ob_type
+
+* GIL :
+  ---
+   -> soln to problem of dealing with shared resources in memory
+
+* Garbage collection :
+  -----
+   -> free the memory blocks from the pool that are no longer required
+
+* Arena :
+  ----
+   - Chunk of memory 
+   - Comprises of pools
+   
+   Pools :- comprises of blocks (free, untouched, allocated)

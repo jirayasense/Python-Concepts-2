@@ -189,6 +189,6 @@ Linked-List, Doubly-Linked List, Trees ::
 
 
 
-
-
-
+* Struct :
+    A struct, or structure, in C is a custom data type that groups together different data types. 
+    To compare to object-oriented languages, it’s like a class with attributes and no methods.

@@ -49,7 +49,7 @@ https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-expla
 
 * numpy.percentile()   // to get percentile value
 
-=> ndim :- number of axes 
+=> ndim :- number of axes
    shape :- no of member in each axis 
 
    Consider axis starts from leftmost bracket till encounter first numerical 
@@ -63,6 +63,15 @@ https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-expla
   -> If slice or idx is not apply for specific axis then default : is used
 
   => You can fill remaininng default slicing axis (:) with ... ie 3 dots
+
+  Fancy Multiple-Index at Time :
+  ----------
+   -> You can access multiple elements corresp to multiple index at same time in ndarray 
+      
+      m[[ax1], [ax2], .. [axN]]   // corresp indexes to each axes 
+
+   -> If you access via all axes then you will get the single array 
+      If you omit any axes then you will get ndarray
 
 * Masking : (boolean indexing)
   ----
@@ -100,7 +109,7 @@ https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-expla
   -----
    Flattens the array & return average
 
-* Axis in 2-D :
+* Axe`s in 2-D :
   -----
    axes = 0 // for row that go downwards   // collapses rows 
    axes = 1 // for column that go from left -> right  // collapese columns

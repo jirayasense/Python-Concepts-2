@@ -1,5 +1,7 @@
 => Normal Functions implement the descriptor protocol
 
+-> to Check the object/instance namespace, use :- `__dict__`
+
 ______________________________
 
 
@@ -32,3 +34,17 @@ ______________________________
 * classmethod & staticmethod 
   ----------------
    to call classmethod from innstance method use :- type(self).classMethodName()
+
+   static methods :- dont pass any argument as first argument like `self` or `cls` 
+                     Those are just regular function but 
+                     we put them inside class just because they have some logical relation with them 
+                     
+
+* Class OOPs concepts also follow namespace :
+  --------------
+   First look at instance namespace (ie __dict__)
+                 class namesapce    
+                 parent class namespace (ie inheritance)
+
+
+          

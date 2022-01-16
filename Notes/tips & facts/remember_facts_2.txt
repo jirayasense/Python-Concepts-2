@@ -23,3 +23,11 @@
     raise CustomExceptinClass() from None  // this will only show CustomExceptinClass stack trace & not all rest other above it
 
 => Python scopes are dictionaries that map names to objects.
+
+* Tuple Comparision for < or >:
+  ---------
+   When 2 tuples are compared for greater than or less than,
+    they are compared from left -> right ie 
+    
+    if decision is made by comparing first element & if draw happen then second element is compared 
+    & so on. 

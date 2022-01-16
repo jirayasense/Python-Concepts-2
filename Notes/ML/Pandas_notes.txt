@@ -46,6 +46,8 @@ Q set col as index :->  df.set_index('col_name')
 
 Q to check if series elem in series2 :- s1.isin(s2)
 
+  to check if series elem has na :- s1.isna()
+
 
 * Remember : 
    ----

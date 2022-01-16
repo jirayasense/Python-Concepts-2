@@ -1,6 +1,7 @@
 https://dbader.org/blog/python-repr-vs-str
 
 [reverse a string] https://dbader.org/blog/python-reverse-string
+[Eval] https://realpython.com/python-eval-function/#understanding-pythons-eval
 
 * sorted() on tuple compares first element of tuple by default
 
@@ -123,3 +124,6 @@ https://dbader.org/blog/python-repr-vs-str
 
    new :- is a class method 
    init :- is a instance method
+
+* eval() :
+  ------

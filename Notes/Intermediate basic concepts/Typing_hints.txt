@@ -19,4 +19,11 @@ Static Type Checking Real Python
     To check any file -> `mypy path/to/your/python/file.py`
     
     
+* Python 3.9+ 
+  --------
 
+   list[int], dict[str, str]
+
+   __origin__
+   __args__
+   __paramters__

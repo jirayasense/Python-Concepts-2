@@ -30,6 +30,8 @@ ref :-
 
 * struct.pack()   // to get floating point representation of a float number 
 
+* math.hypot()   // to get hypotenuese between 2 Points
+
 --------------------------------------
 
 => `nan` is only kinda python obj that is not comparable (ie when compared is meaningless) 

@@ -17,5 +17,7 @@ def timer(func):
 
 @timer
 def waste_some_time(num_times):
-    for _ in range(num_times):
+    for _ in range(num_times):  
         sum([i**2 for i in range(10000)])
+
+print(waste_some_time.__name__)  #  waste_some_time  because we have wrapper_timers

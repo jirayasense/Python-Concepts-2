@@ -27,3 +27,10 @@
 * Scopes :
   ----
    Python scopes are dictionaries that map names to objects.
+
+
+* Lexiographical Sorting Ordering :
+  ------
+   -> In python when you compare 2 strings they are compared LexioGraphically character by character
+
+   
