@@ -18,3 +18,7 @@ references :
    ----
    Tips :- 
     => Do sorting by <key> before doing groupby() same <key>
+
+* itertools.compress() :
+   ----
+    Filter by multiple indexes

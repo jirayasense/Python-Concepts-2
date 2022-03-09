@@ -99,3 +99,25 @@
    assignment expression operator (walrus) `:=`  :- goes right -> left
    
     
+* eval() vs exec() :
+  ---------
+   - both used to dynamically execute the python code
+   - eval :- used for single expression
+     exec :- used for any piece of python code
+
+* Tuple & Copy :
+  ---------
+   - When you create a tuple from another tuple then same tuple object is referred (ie Canonical Form)
+   - There is no point in creating a Shallow Copy of an immutable obj so thus its just making a copy of reference
+     instaed makinng shallow copy of all elements of tuple
+
+
+* Data Class & Immutable Properties :
+  -----------
+   - Inorder to make attrib or properties of a class as immutable 
+     (which is what Data class is known for )
+
+     You need to use double underscore in front of variable-name ie `__varName`
+     this way 
+     it will not allow to be modified or accessed by outside code
+     So you need to provide getter or setter or some other likewise mechanism to expose them

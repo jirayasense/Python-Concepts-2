@@ -48,3 +48,5 @@
         \
          -> decorated_func():
                 return wrapper_func()
+
+* Sentinel Value/Obj :- It's an object that is used to compare whether any other obj is Sentinel Object or Not

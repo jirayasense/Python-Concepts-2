@@ -17,3 +17,12 @@
 [Ds Pytmotw] https://pymotw.com/3/data_structures.html
 [ChainMap] https://realpython.com/python-chainmap/
 
+[queue] https://pymotw.com/3/queue/
+
+
+* Amazing facts :
+---------
+
+* Counter :
+  -----
+   -> You can add & mminus with counter as well

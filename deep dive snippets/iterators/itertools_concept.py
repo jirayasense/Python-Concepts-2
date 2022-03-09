@@ -82,7 +82,7 @@ def hyper_grid_range(start, end, stride, dimen=2):
     '''
     axis = it.takewhile(lambda x: x < end, it.count(start, stride))
     cols = it.tee(axis, dimen)
-    grid = it.product(*cols)
+    grid = it.product(*cols)    # Cross Product
 
     return grid 
 
@@ -90,3 +90,6 @@ def hyper_grid_range(start, end, stride, dimen=2):
 g1 = list(hyper_grid_range(1.5, 10, 4.5, 3))
 for r in g1:
     print(r)
+
+
+#  --------------

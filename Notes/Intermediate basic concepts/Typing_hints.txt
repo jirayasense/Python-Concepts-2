@@ -27,3 +27,12 @@ Static Type Checking Real Python
    __origin__
    __args__
    __paramters__
+
+
+* typing -> @overload decorator :
+  --------------
+   -> Helps to emulate the Function or method Overloading in Python 
+      ie 
+      Useful When type of func has Type-Hints
+      &
+      NOTE : @overload is only useful for static type checking otherwise at run time only 1 Func is called

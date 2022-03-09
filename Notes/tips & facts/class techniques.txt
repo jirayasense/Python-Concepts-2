@@ -20,3 +20,7 @@ Tips :-
 
   
  -> dict does not provide you attribute lookup with their names i.e with dot notation 
+
+ -> to get all the members that are funnctions of particular class 
+      \
+       -> inspect.getmembers(ClassName, inspect.isfunction)

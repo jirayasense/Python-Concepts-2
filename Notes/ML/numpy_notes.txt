@@ -1,12 +1,16 @@
 ref  
 https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-explanation
 
+https://likegeeks.com/numpy-meshgrid/
+
 -> you can use `...` to select all dimension from start to end 
    (i.e It fills as many dimension as required )
 
 => NumPy’s NaN value can’t be compared to any other value using the == operator 
    since this comparison will always be False. 
    NumPy offers the isnan function, which has to be used to compare a value to NaN. 
+
+=> np.random.seed(0) makes random nnumber predictible
 
 
 * np array :
@@ -45,6 +49,10 @@ https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-expla
 
     .argmax()
     .argsort()
+
+    .meshgrid()
+
+    .repmat()
 
 
 * numpy.percentile()   // to get percentile value
@@ -131,4 +139,16 @@ https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-expla
    the nonzero() function returns the indices along each dimension of the input array 
    as a tuple of array indices.
 
-   
+_______________________
+
+* BroadCast :
+  ------
+   Array BroadCasting is a way of doing element wise operations on arrays of different (but compatible) shape.
+
+   Shape Compatibility Rules :
+   ----
+    1) If x,y have diff num of dimension, prepend 1's to the shape of the shorter one.
+
+    2) Any axis of length 1 can be repeated(broadcast) to the length of the other vector's length in that axis 
+
+    3) All the other axes ust have matching length  

@@ -15,6 +15,12 @@ fmt :- [color][marker][line]
   ylabel()
   title()
 
+* figsize()  // figure size (aspect ratio)
+       \
+        dpi
+
+* figure()   // 
+
 ---------
 
 * change the style of plots :- plt.style.use('ggplot')
@@ -23,15 +29,13 @@ fmt :- [color][marker][line]
 
 ---------
 
-
-
 * bar chart ;
   ---
    bar.set_hatch()
 
 1) histogram :- for a series
     \
-     kinnd of bar chart but they have bins instead of displaying all information
+     kind of bar chart but they have bins instead of displaying all information
  
 2) Pie       :- pas a list of numbers
                autopct, pctdistance, explode

@@ -9,5 +9,5 @@ print(s.strip('wcom.'))  # google
 s = '1'
 i = 1
 f = 1.0
-print('size of object inn memory in bytes')
+print('size of object in memory in bytes')
 print(s.__sizeof__(), i.__sizeof__(), f.__sizeof__())

@@ -26,10 +26,12 @@ https://realpython.com/python-histograms/#visualizing-histograms-with-matplotlib
 
 [numpy axes] https://www.sharpsightlabs.com/blog/numpy-axes-explained/#numpy-axes-quick-explanation
 
-
+[bar plots] https://datavizpyr.com/bar-plots-with-matplotlib-in-python/
 
 ----------
 
 [Pandas Tricks] https://towardsdatascience.com/11-pandas-built-in-functions-you-should-know-1cf1783c2b9
 
 [Pandas sample] https://datatofish.com/random-rows-pandas-dataframe/
+
+[Numnpy Tricks] https://towardsdatascience.com/hitchhiker-tips-on-effectively-using-python-numpy-arrays-66649b7bd5fb

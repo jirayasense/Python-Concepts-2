@@ -31,3 +31,27 @@
     
     if decision is made by comparing first element & if draw happen then second element is compared 
     & so on. 
+
+* typing -> @overload :
+  ------------
+   -> used to emmulate method Overloading incase type hints are used in python
+
+
+* __import__ 
+  ___________ 
+   __import__() is a built-in function that takes a module name as a string and returns a reference to the module object.
+
+
+* global vs local variable :
+  -------------
+  -> Whether or not a variable is Free Variable or Local Variable is determined at Compile time &
+     Not at run time
+
+     If variable is defined in local scope (beware after usage or before usage), Python 
+     will not lookup for name in global or non-local scope
+
+
+* inspect -> member of class 
+  ------------
+  Q. To get the all the Function Member of particular {ClassName} :- 
+      -> inspect.getmembers(ClassName, inspect.isfunction)

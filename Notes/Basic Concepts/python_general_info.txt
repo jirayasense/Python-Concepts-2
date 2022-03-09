@@ -1,7 +1,10 @@
+
+[Python Interpreter Working] 
+---------
 * Python is compiled but not to Machine code but to Byte Code 
   This Byte Code is used then by the interpreter
 
-  .pyc files is compiled python files
+  .pyc files is compiled python files  (For C Lang)
 
 
 * In python an assignment is not expression but statement & its done from left to right (in case of chained one)
@@ -28,9 +31,18 @@
   ----
    Python scopes are dictionaries that map names to objects.
 
+   local & global :
+     -> Whether or not a variable is Free Variable or Local Variable is determined at Compile time &
+        Not at run time
+
 
 * Lexiographical Sorting Ordering :
   ------
    -> In python when you compare 2 strings they are compared LexioGraphically character by character
 
-   
+
+* format() :
+  ----
+   - use to formate value usinng format specifier
+   - return String
+   - uses __format__ underhood

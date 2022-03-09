@@ -49,7 +49,7 @@ Q) Why size of empty objects is giving size of 56 or 36 kinda bytes ???
 
    Sloted classes consume less memory than non-sloted classes
 
-   => instances of sloted classes dont use __dict__
+   => instances of sloted classes dont use __dict__   // (while looking for attributes)
 
 
 * descriptors ;

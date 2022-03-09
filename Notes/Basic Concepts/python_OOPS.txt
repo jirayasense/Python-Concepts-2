@@ -1,6 +1,18 @@
+__________
+Useful methods 
+
+isinstance()
+issubclass()
+
+
+---------
+
+
 => Normal Functions implement the descriptor protocol
 
 -> to Check the object/instance namespace, use :- `__dict__`
+
+-> to get help abt MRO & other details of class :- help(classname)
 
 ______________________________
 
@@ -33,7 +45,7 @@ ______________________________
 
 * classmethod & staticmethod 
   ----------------
-   to call classmethod from innstance method use :- type(self).classMethodName()
+   to call classmethod from instance method use :- type(self).classMethodName()
 
    static methods :- dont pass any argument as first argument like `self` or `cls` 
                      Those are just regular function but 
@@ -48,3 +60,46 @@ ______________________________
 
 
           
+* Inheritance :
+  -----
+
+   Method Resolution Order :- (MRO)
+   ---
+   - Chain of Lookup for Methods & Arttributes 
+
+   TIP :- to get idea abt MRO :- use `help(ClassName)`
+
+   super :
+   ----
+    - to call parent class attributes 
+
+
+* magic methods :
+  -------
+   - allows to emulate the builtin behaviour in python & also operator overloading
+
+   1) __str__  | __repr__
+        o.__repr__()  or repr(o)
+
+   2) __add__
+   3) __len__
+
+* NotImplemented :
+  ----
+   If some operations throw NotImplemented exception then operand is checked either way to second
+   side if there the operation is define or not !
+
+
+* Property :
+  ------
+   get :- @property 
+       :- defining the getter property as a method but can access it like a property/attribute
+       :- no need () while invoking
+
+   setter :
+       @name.setter   // name is name of the property (ie getter property)
+
+   deleter :
+       @name.deleter  // dispose the resources of an instance 
+
+       Eg :- del obj.name 

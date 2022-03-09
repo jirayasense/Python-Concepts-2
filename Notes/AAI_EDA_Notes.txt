@@ -66,3 +66,25 @@ __________________________
 REMEMBER : diff of CDF = PDF
  
            Integration of PDF = CDF
+
+----------
+
+* UniVariate KDE Plot :
+  ------
+   -> Convert Histogram to PDF or CDF
+   -> Density Estimate via Kernel like Gaussian or Triangle or any other shape Curve
+
+   -> First just plot kernel for each pt 
+      then add each kernel with each other into single kernel 
+
+   -> Gaussian Kernel, Triangular Kernel, Cosine Kernel
+
+* Contour Plot :  (BiVariate KDE plot)
+  ------
+   - Joint Density Plot (in 2 dimension)
+   - Diff level of density for 2 features at same time 
+   - KDE plot for Joint features is Contour Plot
+
+   -> Highest density is circle with small radi 
+      lowest Density is circle with large radi
+    

@@ -15,7 +15,7 @@
 TIPS 
 
 - to get refcount of an object :- sys.getrefcount()
-- to check the fix interval of conntinuous use by a thread :- sys.getcheckinterval()
+- to check the fix interval of continuous use by a thread :- sys.getcheckinterval()
 
 -----------
 => Python uses reference counting for memory management
@@ -23,6 +23,9 @@ TIPS
 
 -> Python has Single-Thread, GIL way for memory management (powerful for single threaded)
    Other lanng have JIT compilers that employs Locking mechanism (good for multi-threaded)
+
+Simple Terms :-
+  - 
 
 
 * GIL (Global interpreter Lock) :
@@ -33,7 +36,6 @@ TIPS
   * deadlock :- can only happen if there is more than 1 lock
 
   -> GIL simple as only 1 lock needs to be managed
-
   => lock is shared between threads 
 
 -> CPU-bound programs are those that are pushing the CPU to its limit
@@ -51,6 +53,19 @@ TIPS
 
 -> Python Code gets boiled down to ByteCode which then interpreted by Virtual Machine
 
+REMEMBER :- 
+
+-> Physical or actual memory is abstracted by the OS 
+   OS abstract this by creating virtual memory for processes (like python)
+   now this process can carve out chunk of memory from virtual space 
+
+VMM :
+  OS-specific virtual mempry manager that carves out chunk of memory for Python Process 
+
+CPython - Object Allocator :
+  
+  Responsible for allocating memory for Object within obj memory area
+
 * Struct :
     A struct, or structure, in C is a custom data type that groups together different data types. 
     To compare to object-oriented languages, it’s like a class with attributes and no methods.
@@ -62,7 +77,7 @@ TIPS
 
 * GIL :
   ---
-   -> soln to problem of dealing with shared resources in memory
+   -> soln to problem of dealing with shared resources in memory   (on Single Core/processor)
 
 * Garbage collection :
   -----
@@ -72,5 +87,9 @@ TIPS
   ----
    - Chunk of memory 
    - Comprises of pools
+   - aligned on page boundary in memory 
    
    Pools :- comprises of blocks (free, untouched, allocated)
+
+   
+   Page Boundary : A page boundary is the edge of a fixed-length contiguous chunk of memory that the OS uses

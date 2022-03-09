@@ -7,3 +7,11 @@ modules useful :
  ----------
   ->  Python yield statement is certainly the linchpin 
       on which all of the functionality of generators rests
+
+
+* next() & Iterators or generators :
+  --------
+   -> When you use next() manually on Iterator or Gennerator then on Exhausted
+      it will give StopIteration Exception 
+
+      To avoid that you can provide default val in next() as second argument

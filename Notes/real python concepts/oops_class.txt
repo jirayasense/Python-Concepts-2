@@ -6,7 +6,6 @@
 [metaclass] https://realpython.com/python-metaclasses/
 [namedtuple] https://realpython.com/python-namedtuple/
 
-
 [mixin interface] https://rednafi.github.io/digressions/python/2020/07/03/python-mixins.html
 
 [class instance attributes]  https://www.python-course.eu/python3_class_and_instance_attributes.php
@@ -14,11 +13,15 @@
 [Decorator] https://realpython.com/primer-on-python-decorators/
 
 [descriptors] https://realpython.com/python-descriptors/
+[Data classes] https://realpython.com/python-data-classes/
 
 * property()
   callable()
 
 * Monkey Patching - for user defined class only
+
+=> obj.__class__.__base__  // get access to base class of any object
+=> __subclasses__() to get referennce to all subclasses of curr class object 
 
 
 ---------------------------

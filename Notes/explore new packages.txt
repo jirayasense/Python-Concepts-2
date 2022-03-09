@@ -13,3 +13,19 @@
 
 * cprofile :
   ------
+
+* PIL :
+  ---
+   Image & ImmageFilter
+
+* pydantic :   // (meant for parsing)
+  ------
+   BaseModel
+
+* types :
+  ----
+   SimpleNameSpace  
+
+* numbers :
+  ----
+   Real

@@ -18,6 +18,10 @@
 [pandas fast flexible] https://realpython.com/fast-flexible-pandas/
 
 [Data Visualization Bokeh] https://realpython.com/python-data-visualization-bokeh/
+[Plotting matplotlib guide] https://realpython.com/python-matplotlib-guide/
+[Python Histogram] https://realpython.com/python-histograms/
+[Pandas Plot Python] https://realpython.com/pandas-plot-python/
+[Visualization using scatter] https://realpython.com/visualizing-python-plt-scatter/
 
 [numpy pandas data cleaning] https://realpython.com/fast-flexible-pandas/
 
@@ -27,6 +31,10 @@
 https://realpython.com/tutorials/data-science/
 
 [bigData & PySpark] https://realpython.com/pyspark-intro/
+
+[Sqlite ] https://realpython.com/python-sqlite-sqlalchemy/
+
+[Random Data in Python] https://realpython.com/python-random/
 
 
 Useful Modules :

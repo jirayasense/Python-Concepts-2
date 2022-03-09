@@ -1,10 +1,16 @@
+ref :
+[MemCache efficient Caching] https://realpython.com/python-memcache-efficient-caching/
+[LRU] https://realpython.com/lru-cache-python/
+
+____________
+
 * Local Computer Cache : functools.lru_cache
 * Distributed Cache :- memcached, reddis
 
 Motif :
 
 If not cache then :-
-   - either you need to bring data again from canonnical source 
+   - either you need to bring data again from canonical source 
    - or you need recomputation in some cases 
 
 Therefore, when a system is distributed across a network, 

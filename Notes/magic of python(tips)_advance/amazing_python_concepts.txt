@@ -14,5 +14,5 @@
    When there is deadlock of object referencing same object 
 
 * self(ClassName, self).__init__(param)
-  =====
+  ----------
    -> that's way to run __init__ method of parent class reliably.

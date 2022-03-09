@@ -2,6 +2,15 @@
 --------------------------
 TIP : Slicing is inclusive in pandas
 
+
+
+--------------------------
+df.dtypes // give info abt all types for all columns
+
+
+
+______________
+
 * Pandas : pd
 
 * dataframe & series :
@@ -61,5 +70,12 @@ Q to check if series elem in series2 :- s1.isin(s2)
 
    => The new DataFrame index is the union of the two Series indices:
 
+
 * subset using 2 ways :  
   -----
+
+
+* to_csv() :
+  -----
+   - doesn't limit you to create only csv files
+   - you can create txt files with same method as well

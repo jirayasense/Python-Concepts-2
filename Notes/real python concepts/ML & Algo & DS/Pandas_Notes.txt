@@ -4,6 +4,10 @@ Useful methods :-
    { 
      to_datetime(), nunique(), value_counts()
      dropna()
+     .astypes()   // set muktiple dtatype of column at once
+
+     memory_usage()
+     to_numpy() 
    }
 
 Useful Property :
@@ -233,3 +237,24 @@ methods :-
              parse_dates,
              squeeze       // to get series object
 
+TIP :- It's convenient to specify type of columns of df via `astypes()` explicitly
+       before writing data to sql, csv or pickel files 
+
+
+* Work with Large Dataset :
+  ----------
+   - Compress your files
+   - Choose only the columns you want
+   - Omit the rows you don’t need
+   - Force the use of less precise data types
+   - Split the data into chunks
+
+
+* Skip Rows while reading :
+  ------
+   read_csv()  or read_excel()
+
+   skiprows, skipfooter, nrows
+
+
+TIP :- to see memory consumption by dataframe :- `df.memory_usage()`

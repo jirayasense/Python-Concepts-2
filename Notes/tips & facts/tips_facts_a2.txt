@@ -44,6 +44,16 @@
 
 => is & in are comparison operators & can participate in chained comparison
 
+=> When  0 or empty list are considered as valid value then use None as a default val 
+  ie in such case None become Sentinel Val 
+   
+   If None is also a valid val then you need to create some sentinel object like 
+     Eg SENTINEL = object()
+   & use this senntinel object as Default val
+
+  Thus inorder to distinguish None We need to make our own Sentinel Val
+    
+
 -------- Amazing 
 
 Augmented Assignments Operator :
@@ -83,3 +93,28 @@ Augmented Assignments Operator :
 
    Whenn you do chain assignments in python -> a temp var is created for val expression
     & then all variable from left to right are assigned that temp variable one by one
+
+
+* List & its Size (Amazing Obsv):
+  ----------------
+   What innfo list holds in Python (at its core)
+
+   # Garbage Collection info (before Object)
+   _gc_next = ...
+   _gc_prev = ... 
+
+   # PyObject info 
+   ob_refcnt = ...
+   on_type = ...
+
+   # PyVarObject info 
+   ob_size = ...  // equi to len() as list is of variable size // Tells how many elem are in the memory
+
+   # PyListObject info 
+   ob_item = ...     # pointer to contiguous memory
+   allocated = ...   # how many elems could FIT in ob_item memory 
+
+   
+   => When we do sys.getsizeof(l) :- it returns the size of memory allocated & not used 
+
+   -> For garbage collection purposes Python stores 2 pointers to object before the object gets starts
