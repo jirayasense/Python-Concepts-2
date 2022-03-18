@@ -13,3 +13,72 @@ def inverse_mapping(f):  # Assuming the {f} is dict
     return f.__class__(map(reversed, f.items()))
     # dict(((v, k) for k, v in f.items()))
 
+def sort_dict_by_values(d, reverse = False):
+    return dict(sorted(d.items(), key=op.itemgetter(1), reverse=reverse))
+
+def intersect_dict(d1, d2):
+    '''
+    Return new dict with common keys & vals as tuple of combined elements
+    '''
+    common_keys = d1.keys() & d2.keys()
+    return {k: (d1[k], d2[k]) for k in common_keys}
+
+def merge_dict(*dict, agg=op.add):
+    '''
+    merge the dict via aggregator [agg]
+    return new dictionary
+
+    : param agg: needs to be function that accept 2 params & return 1 val
+    '''
+    mergedDict = {}   #! Note : this merged dict will be unsorted
+    for d in dict:
+        for k, v in d.items():
+            mergedDict[k] = agg(mergedDict.get(k, 0), v)
+    return mergedDict
+
+def merge_dict(*dict, agg=op.add, sorted=False, reverse=False):
+    '''
+    merge the dict via aggregator [agg]
+    return new dictionary
+
+    : param agg: needs to be function that accept 2 params & return 1 val
+    '''
+    # 1. Merge 
+    mergedDict = {}   #! Note : this merged dict will be unsorted
+    for d in dict:
+        for k, v in d.items():
+            mergedDict[k] = agg(mergedDict.get(k, 0), v)
+    if not sorted:
+        return mergedDict
+    
+    # 2. Sort
+    smd = sort_dict_by_values(mergedDict, reverse=reverse)  # sorted merged dict
+
+    return smd
+
+
+
+if __name__ == '__main__':
+
+    # 1. Sort the Dict by Vals
+    d = {1:20, 2:100, 3:1, 4:15}
+    sd = sort_dict_by_values(d)  
+
+    print(sd)  #  {3: 1, 4: 15, 1: 20, 2: 100}
+
+    # 2. Intersect the Dict
+    d1 = {1:10, 2:20, 3:30, 6:60}
+    d2 = {1:100, 4:400, 5:500, 6:600}
+
+    cd = intersect_dict(d1, d2)
+    print(cd)  # {1: (10, 100), 6: (60, 600)}
+
+    # 3. Merge Dictionaries
+    d1 = {'python':10, 'java':20, 'dart':30, 'c#':60}
+    d2 = {'python':100, 'kotlin':400, 'c++':500, 'c#':600}
+    md = merge_dict(d1, d2, sorted=True, reverse=True)
+
+    print(md)
+
+
+    

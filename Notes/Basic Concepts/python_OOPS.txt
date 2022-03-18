@@ -7,6 +7,10 @@ issubclass()
 
 ---------
 
+=> In python you can get access to currently executing stack frame by :- inspect.currentframe()
+
+---------
+
 
 => Normal Functions implement the descriptor protocol
 
@@ -103,3 +107,55 @@ ______________________________
        @name.deleter  // dispose the resources of an instance 
 
        Eg :- del obj.name 
+
+--------- Advance ------------
+
+* super() :   // MISC TOPIC 
+  ------
+   UseCase :
+   |
+    -> LoggingDict -> ie While Setting or getting Item of Dict (via Custom Dict)
+
+   TIPS (REMEMBER)
+   
+   > super doesnt necessary call your parent (ie it may call ancestor's version as well, possibly)
+   > super can access sibblings
+
+   MRO (Method Resolution Order)
+   -----
+    To get mro for any class -> ClassName.__mro__  // returns list of ordered search for method
+
+   super => next in line in MRO's list 
+   
+   REMEMBER :- 
+    -> with Single innheritance next in line is always the Parent 
+    -> with multiple inheritance next in line is not always the Parent (it may be Sibblings)
+  
+  Q) What actually super() is ??
+   ->
+     super() := returns instance of Super Class
+        \
+  * Proxy Object 
+    ____________
+         -> instance of Super class is called as Proxy Object 
+         -> It's simply a wrapper class that holds the obj & provide attribute lookup for that obj
+
+      Proxy Obj := an Class or Object that is intended to store or hold another Object 
+
+  => super just doesn't forward only attrib req & returnn res
+
+  => 0 arg super gathers all the info it needs just by looking at Caller's Stack Frame
+     |
+     So when we do super()
+     it actually sneakily grabs 2 variable underhood ie __class__ & self  (via Caller's Stack frame)
+      1) __class__  :- class it's currently run from !
+      2) self       :- object its currently being run on !
+
+      So You can pass 2 argumments 
+
+      Eg b = B()
+         sup = super(B, b)   // B is class from where its being running on  & b is object on which its being running on  
+
+* Cooperative Inheritance :
+  ------
+   -> A way to ensure that particular Parent's behaviour is invoked on super()

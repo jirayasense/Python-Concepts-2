@@ -99,3 +99,7 @@ Automaticaly generates doc for module/obj :- (in cmd) use `pydoc`
 36) `heapq` lets you fetch top t of n items in O(t+n) time
 
 37) to get refcount of an object :- sys.getrefcount
+
+38) Use enumerate(zip(t)) => to get tuple with respective indexes unfold
+
+39) To get mro for any class -> ClassName.__mro__  // returns list of ordered search for method

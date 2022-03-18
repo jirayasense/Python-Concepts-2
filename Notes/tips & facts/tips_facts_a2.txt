@@ -118,3 +118,8 @@ Augmented Assignments Operator :
    => When we do sys.getsizeof(l) :- it returns the size of memory allocated & not used 
 
    -> For garbage collection purposes Python stores 2 pointers to object before the object gets starts
+
+* Stack Frame :
+  ------
+   => In python you can get access to currently executing stack frame by :- inspect.currentframe()
+   => You can find the locals for current stack frame :- inspect.currentframe().f_back.f_locals
