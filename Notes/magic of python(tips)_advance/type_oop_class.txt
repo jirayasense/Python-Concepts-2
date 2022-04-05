@@ -16,3 +16,5 @@
    dynamically create class :
    ----------
     -> using type()
+              \
+               this procedure is often called as metaclass

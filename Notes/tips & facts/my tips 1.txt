@@ -103,3 +103,6 @@ Automaticaly generates doc for module/obj :- (in cmd) use `pydoc`
 38) Use enumerate(zip(t)) => to get tuple with respective indexes unfold
 
 39) To get mro for any class -> ClassName.__mro__  // returns list of ordered search for method
+
+40) To get platform related information :-- use `platform` package
+                                            { node(), machine(), processor(), platform(), system(), release(), version() }

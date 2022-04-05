@@ -33,3 +33,9 @@
 * inspect :
   -----
    currentframe()   // current stack frame
+
+* jsonscheme, marshmallow  // for json serialization-deserialization
+
+* platform :
+  -----
+   - node(), machine(), processor(), platform(), system(), release(), version()

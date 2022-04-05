@@ -159,3 +159,7 @@ ______________________________
 * Cooperative Inheritance :
   ------
    -> A way to ensure that particular Parent's behaviour is invoked on super()
+
+
+* bound methods vs free methods :
+  ----------------------

@@ -1,8 +1,11 @@
 import itertools as it
 from collections import Counter
+from string import digits
 from textwrap import fill
 from functools import reduce
 import heapq
+from typing import List
+from math import log10
 
 
 def all_equal1(iterable):
@@ -56,6 +59,42 @@ def argsort(l, mapper, reverse=False):
     if mapper:
         ml = list(map(mapper, l))
     return sorted(range(len(l)), key=ml.__getitem__, reverse=reverse)
+
+def rev(arr, l, r):
+    '''reverse the arr inplace from [l,r]'''
+
+    def a1():
+        while l<r:
+            arr[l], arr[r] = arr[r], arr[l]
+            l, r = l+1, r-1
+    
+    def a2():
+        arr[l:r+1] = reversed(it.islice(arr, l, r+1))
+
+def rotate(nums: List[int], k: int) -> None:
+    """
+    In-Place Rotation (3 Reversal Approach)
+    """
+    s = len(nums)  # size
+    e = k % s   # effective rotate
+    if not e: return  # effectively no change in {nums} after {k} rotation
+
+    nums.reverse()     # 1s Reverse Entire Array
+    rev(nums, 0, e-1)  # 2 reverse the first part
+    rev(nums, e, s-1)  # 3 reverse the second part
+
+def get_digits(n, key, rev=False):
+    if rev:  # In reverse manner ie from LSB -> MSB
+        while n:
+            n, r = divmod(n, 10)
+            yield r if not key else key(r)
+    else: # from MSB -> LSB
+        digits = int(log10(n))
+        for i in range(digits):
+            d, n = divmod(n, pow(10, digits-1))
+            yield d if not key else key(d)
+            
+
 
 if __name__ == '__main__':
     #all_equal2([2,2,2])

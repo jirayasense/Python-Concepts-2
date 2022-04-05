@@ -29,10 +29,13 @@ Static Type Checking Real Python
    __paramters__
 
 
-* typing -> @overload decorator :
+* typing -> @overload decorator : (MetaClass)
   --------------
    -> Helps to emulate the Function or method Overloading in Python 
       ie 
       Useful When type of func has Type-Hints
       &
       NOTE : @overload is only useful for static type checking otherwise at run time only 1 Func is called
+
+
+   -> typing.__prepare__()  // inorder to prepare namespace for class 

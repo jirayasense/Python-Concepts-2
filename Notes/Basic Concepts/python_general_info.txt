@@ -46,3 +46,9 @@
    - use to formate value usinng format specifier
    - return String
    - uses __format__ underhood
+
+
+* eval() vs int()
+  -------
+   -> eval('0123')  // error in eval it do not allow leading zero in case of base 10 numbers
+      int('023') => 23  // whereas int() allows to simplify it

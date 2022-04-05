@@ -1,0 +1,7 @@
+* Bounds Methods vs Normal|Free Methods :
+  -------------------------
+   Free Methods :- method reference via class ie ClassName.methodName 
+
+   bound methods :- method reference via object ie instanceName.methodName
+      \
+       often takes place at runtime (ie dynamic) as method gets bounded to objects at dynamically

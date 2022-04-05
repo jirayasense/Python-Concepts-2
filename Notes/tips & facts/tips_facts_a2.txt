@@ -123,3 +123,9 @@ Augmented Assignments Operator :
   ------
    => In python you can get access to currently executing stack frame by :- inspect.currentframe()
    => You can find the locals for current stack frame :- inspect.currentframe().f_back.f_locals
+
+
+* type, exec & namespace :
+  -------
+   --> You can use (metaclass) & exec (dynamic) 
+       to do objects & class stuffs at run time (ie dynamically in true sense)
