@@ -42,7 +42,7 @@ ref :- mcoding youtube
 
 => New class is created or excecuted in some namespace
 
-* What is MetaClass ??
+  * What is MetaClass ??
   -----
    -> MetaClass is a point of Customization in this Class Creation Process.
    -> MetaClass is just a class that inherits from type class

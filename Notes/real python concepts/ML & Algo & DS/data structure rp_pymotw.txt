@@ -17,6 +17,8 @@
 [Ds Pytmotw] https://pymotw.com/3/data_structures.html
 [ChainMap] https://realpython.com/python-chainmap/
 
+[Counter] https://realpython.com/python-counter/
+
 [queue] https://pymotw.com/3/queue/
 
 

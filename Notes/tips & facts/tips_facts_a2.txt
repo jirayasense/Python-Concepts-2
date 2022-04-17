@@ -31,6 +31,8 @@
 
 * To list all objects in builtin namespace :- dir(__builtins__)
 
+* use custom key for sorted fun :- functools.cmp_to_key()
+
 --------
 
 -> for loop is faster in compare to while loop 

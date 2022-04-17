@@ -15,3 +15,6 @@ modules useful :
       it will give StopIteration Exception 
 
       To avoid that you can provide default val in next() as second argument
+
+** QUE :- Check if iterator is empty or not ??
+ -> 

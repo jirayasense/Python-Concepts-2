@@ -1,3 +1,4 @@
+from math import isqrt
 import itertools as it
 from collections import Counter
 from string import digits
@@ -93,12 +94,24 @@ def get_digits(n, key, rev=False):
         for i in range(digits):
             d, n = divmod(n, pow(10, digits-1))
             yield d if not key else key(d)
-            
+
+def lst_to_matrix(lst):
+    ''' Convert list of elements of n^2 length -> n*n matrix '''
+    s = len(lst)
+    d = isqrt(s)
+    assert d * d == s, "Provide list of leength that is whole squared"
+    r = it.repeat(iter(lst), d)
+    *z, = zip(*r)
+    return z
+
+def grp_by_offset(lst, gSize):
+    ''' Segregat a list into groups (of length gSize) from left -> right '''
+    r = it.repeat(iter(lst), gSize)
+    z = it.zip_longest(*r, None)
+    return z
 
 
-if __name__ == '__main__':
-    #all_equal2([2,2,2])
-
+def inp1():
     l = [1,2,3,4,5]
     # t1, t2 = it.repeat(iter(l), 2)
 
@@ -117,4 +130,21 @@ if __name__ == '__main__':
     a = [1, 10, 20, 40, 22, 15]
     n = argsort(a, lambda x: abs(x-20))
     print(n)  # [2, 4, 5, 1, 0, 3]
+
+def inp2():
+    n = 16 # size
+    l = [i for i in range(1, n+1)]  # 3*3
+    a = lst_to_matrix(l)
+    print(a)
+
+    l2 = [i for i in range(20)]
+    b = grp_by_offset(l2, 4)
+    print(list(b))
+
+if __name__ == '__main__':
+    #all_equal2([2,2,2])
+
+    inp2()
+
+    
   

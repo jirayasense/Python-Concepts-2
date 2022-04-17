@@ -55,3 +55,18 @@
   ------------
   Q. To get the all the Function Member of particular {ClassName} :- 
       -> inspect.getmembers(ClassName, inspect.isfunction)
+
+
+* cmp() vs cmp_to_key()
+  -------------
+   -> cmp() used to compare two values and return 1, -1, or 0  // ie Kinda TOtal Ordering 
+
+   -> cmp_to_key() uses a key to compare elements
+        \
+         It is built into functools modules
+
+
+* next() & iterator :
+  -------
+  -> on Exhausted iterator, if you want some sentinel val 
+     or default val then you
