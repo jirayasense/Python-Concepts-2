@@ -44,6 +44,17 @@ def segregate_into_groups2(lst, grpSize=2):
     
     return res
 
+def grp_by_offset(lst, gSize):
+    ''' Segregat a list into groups (of length gSize) from left -> right 
+    Eg  lst := [1,2,3,4,5,6,7,8,9]
+        gSize := 3
+
+        out := [(1,2,3), (4,5,6), (7,8,9)]
+    '''
+    r = it.repeat(iter(lst), gSize)
+    z = it.zip_longest(*r, None)
+    return z
+
 
 def argsort(l, mapper, reverse=False):
     '''
@@ -104,11 +115,20 @@ def lst_to_matrix(lst):
     *z, = zip(*r)
     return z
 
-def grp_by_offset(lst, gSize):
-    ''' Segregat a list into groups (of length gSize) from left -> right '''
-    r = it.repeat(iter(lst), gSize)
-    z = it.zip_longest(*r, None)
-    return z
+def get_boundaries(matrix):
+    ''' Get All Boundaries Cells Position of {matrix} 
+    ie First & last Rows  &
+       First & last Cols
+
+    '''
+    m, n = len(matrix), len(matrix[0])
+
+    h = it.product((0, m-1), range(n))  # Horizontal - Rows as Boundary
+    v = it.product(range(m), (0, n-1))  # Vertical - cols as Boundary
+
+    bounds = it.chain(h, v)
+
+    return bounds
 
 
 def inp1():

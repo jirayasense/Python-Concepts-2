@@ -1,5 +1,11 @@
 import operator as op
 
+def unionAll(*sets):
+    return set().union(*sets)
+
+def intersectAll(*sets):
+    return unionAll(*sets).intersection(*sets)
+
 def dict_equal_sensative(d1, d2):
     ''' Compare 2 Dictionary (order wise))'''
     # 1. Check First if both dictionary have same items
@@ -36,7 +42,7 @@ def merge_dict(*dict, agg=op.add):
             mergedDict[k] = agg(mergedDict.get(k, 0), v)
     return mergedDict
 
-def merge_dict(*dict, agg=op.add, sorted=False, reverse=False):
+def merge_dict(*dictionaries, agg=op.add, sorted=False, reverse=False):
     '''
     merge the dict via aggregator [agg]
     return new dictionary
@@ -45,7 +51,7 @@ def merge_dict(*dict, agg=op.add, sorted=False, reverse=False):
     '''
     # 1. Merge 
     mergedDict = {}   #! Note : this merged dict will be unsorted
-    for d in dict:
+    for d in dictionaries:
         for k, v in d.items():
             mergedDict[k] = agg(mergedDict.get(k, 0), v)
     if not sorted:
@@ -56,10 +62,18 @@ def merge_dict(*dict, agg=op.add, sorted=False, reverse=False):
 
     return smd
 
+def sym_diff(*maps):
+    ''' Symmetric diff of all dicts '''
+    res = {}  # symmetric diff
+    u = set().union(*maps)  # union all
+    i = u.intersection(*maps)  # intersection all
+    sd = u - i   # symmetric diff  keys
+
+    res = {k: [m.get(k,0) for m in maps] for k in sd}  # symmetric diff dicts
+    return res
 
 
-if __name__ == '__main__':
-
+def inp1():
     # 1. Sort the Dict by Vals
     d = {1:20, 2:100, 3:1, 4:15}
     sd = sort_dict_by_values(d)  
@@ -80,5 +94,17 @@ if __name__ == '__main__':
 
     print(md)
 
+def inp2():
+    d1 = {'e1': 100, 'e2': 200, 'u1': 150, 'u2': 300}
+    d2 = {'e1': 350, 'u1':260, 'u2': 80}
+    d3 = {'e1': 180, 'u1': 360, 'l1': 20}
 
+    d = sym_diff(d1,d2,d3)
+    print(d)
+
+
+if __name__ == '__main__':
+    
+
+    inp2()
     

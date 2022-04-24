@@ -70,3 +70,11 @@
   -------
   -> on Exhausted iterator, if you want some sentinel val 
      or default val then you
+
+
+* defaultdict :
+  -------
+  -> if key existence is check with defaultdict instance then at that time new entry is not created with default val 
+     but 
+     when there is access for key on same instance then new entry may be created 
+     with default val if key is missing in defaultdict
