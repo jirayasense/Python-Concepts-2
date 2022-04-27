@@ -39,3 +39,7 @@
 * platform :
   -----
    - node(), machine(), processor(), platform(), system(), release(), version()
+
+* six :
+  ----
+   library that is compatible with python 2 & 3 (ie 2*3 = 6)
